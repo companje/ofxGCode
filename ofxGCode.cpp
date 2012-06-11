@@ -17,7 +17,7 @@ void ofxGCode::addCommandWithParams(const char* format, ...) {
 }
 
 void ofxGCode::addComment(string s) {
-    add("(**** "+s+" ****)");    
+    add("(**** "+s+" ****)");
 }
 
 void ofxGCode::save(string filename) {
@@ -32,7 +32,7 @@ void ofxGCode::load(string filename, bool clear) {
     string line;
     while (getline(f,line)) lines.push_back(line);
     f.close();
-    return lines;
+//    return lines;
 }
 
 void ofxGCode::insert(string filename) {
